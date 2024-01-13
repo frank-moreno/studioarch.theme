@@ -1,1 +1,1 @@
-# demo02-realstate.theme
+# demo02-studioarch.theme
