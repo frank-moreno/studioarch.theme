@@ -1,0 +1,31 @@
+$grid-breakpoints: (
+	xs: 0,
+	xsm: 380px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+	xxxl: 1920px
+);
+
+$grid-columns: 12;
+
+$grid-gutter-width: 1.5rem;
+
+$container-width: 1600px;
+
+@if $grid-columns > 0 {
+	@for $i from 1 through $grid-columns {
+		:export {
+			grid-col-#{$i}: percentage( calc($i / $grid-columns) );
+		}
+	}
+}
+
+@each $name,
+$breakpoint in $grid-breakpoints {
+	:export {
+		breakpoint-#{$name}: $breakpoint;
+	}
+}

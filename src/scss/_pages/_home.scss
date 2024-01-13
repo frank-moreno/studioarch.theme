@@ -1,0 +1,582 @@
+.home{
+
+    .swiper-home-top {
+        height: 70vh;
+        margin-bottom: 15vh;
+        margin-top: 15vh;
+        width: 100%;
+        padding: 0;
+
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 10vh;
+            margin-top: 10vh;
+            height: 80vh;
+        }
+
+        .swiper-wrapper {
+            width: max-content;
+            overflow: hidden;
+
+            .swiper-slide {
+                text-align:left;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+
+                p:first-child:before {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-color: transparent;
+                    display: inline-block;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 2px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url('../../assets/images/svg/agency.svg');
+                }
+            }
+        
+        }
+
+                    
+    }
+
+    form.searchandfilter {
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        background-color: #fff;
+        width: 100%;
+        padding: 30px 60px;
+        margin-top: -215px;
+        z-index: 2;
+        box-shadow: 0 0 15px grey;
+        border-radius: 2px;
+
+        ul {
+
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            li {
+
+                width: 100%;
+
+                label {
+                    display: none;
+                }
+
+                input {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    border: 1px solid lightgrey;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $darkblue;
+                    margin: 30px 0 10px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                input[type="submit"] {
+                    background-color: $orange;
+                    border: none;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                select {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    border: 1px solid lightgrey;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $darkblue;
+                    margin: 30px 0 10px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .about_btn {
+        background-color: rgba($orange,.1);
+        padding: 5px 20px;
+        border-radius: 25px;
+        width: fit-content;
+    }
+
+    #counter-box {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .card {
+
+            background-color: transparent;
+            border: none;
+
+            &-header,
+            &-body,
+            &-footer {
+                border: none;
+                background-color: transparent;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+    }
+
+    .details_grid {
+
+        .row {
+            width: 80%;
+
+            @include media-breakpoint-down(md) {
+                width: auto;
+            }
+        }
+
+        .card{
+
+            border: none;
+            padding-bottom: 30px;
+            margin-top: -20px;
+
+            &:after {
+                content: '';
+                border-right: 1px solid lightgrey;
+                height: 50px;
+                top: 45px;
+                position: absolute;
+                right: 0;
+            }
+
+            .card-body {
+                padding: 0;
+                p {
+                    &:after {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        padding: 30px 15px 30px;
+                        display: inline-block;
+                        margin-right: 10px;
+                        position: relative;
+                        top: 23px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size:60%;
+                        // background-image: url('../../assets/images/svg/bed.svg');
+                    }
+                }
+            }
+
+            .card-footer {
+
+                background-color: transparent;
+                border: none;
+                padding: 0;
+
+            }
+
+        }
+
+        .col{
+            &:nth-child(1) {
+                p:after {
+                    background-image: url('../../assets/images/svg/bed.svg');
+                }
+            }
+            &:nth-child(2) {
+                p:after {
+                    content: "";
+                    background-image: url('../../assets/images/svg/bath.svg') !important;
+                }
+            }
+            &:nth-child(3) {
+                p:after {
+                    content: "";
+                    background-image: url('../../assets/images/svg/car.svg') !important;
+                }
+            }
+            &:nth-child(4) {
+                p:after {
+                    content: "";
+                    background-image: url('../../assets/images/svg/square.svg') !important;
+                }
+                .card {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .ourservices {
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .container .row {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            gap: 40px;
+            height: 100%;
+
+            @include media-breakpoint-down(lg) {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+                .col {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .about_btn {
+
+            margin: 0px auto 40px auto;
+
+            & ~ .wp-block-heading {
+                margin-bottom: 50px;
+            }
+
+        }
+
+        .card {
+
+            background: none;
+            border: none;
+            box-shadow: 0 0 10px lightgrey;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+
+            @include media-breakpoint-down(sm){
+                margin-bottom: 50px;
+            }
+
+            &-header,
+            &-body,
+            &-footer {
+                border: none;
+                background-color: transparent;
+            }
+
+            &-footer {
+                .wp-block-button__link {
+                    &:after {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: transparent;
+                        display: inline-block;
+                        margin-left: 10px;
+                        position: relative;
+                        top: 2px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        background-image: url('../../assets/images/svg/arrow-right.svg');
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .cards-properties{
+
+        .about_btn {
+            margin: 0 auto 40px;
+
+            & ~ .wp-block-heading {
+                margin-bottom: 50px;
+            }
+        }
+
+        overflow: hidden;
+
+    }
+
+    .swiper-properties {
+
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+
+        .swiper-slide {
+
+            .property-item {
+
+                box-shadow: 0 0 15px lightgrey;
+
+                &__status {
+
+                    background-color: $orange;
+                    padding: 5px 10px;
+
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                }
+
+                &__image {
+
+                    img {
+                        max-height: 300px;
+                        object-fit: cover;
+                        width: 100%;
+                    }
+
+                }
+
+                &__address {
+
+                    background-color: rgba($black,.44);
+                    padding: 5px 0 5px 10px;
+                    span {
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: 400;
+
+                        &:before {
+                            content: '';
+                            width: 15px;
+                            height: 15px;
+                            background-color: transparent;
+                            display: inline-block;
+                            margin-right: 10px;
+                            position: relative;
+                            top: 2px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            background-image: url('../../assets/images/svg/dotmap-white.svg');
+                        }
+                    }
+
+                }
+
+                &__price {
+
+                    padding: 20px 20px 10px;
+
+                    .price {
+                        color: $orange;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                }
+
+                &__title {
+
+                    padding: 0 20px 10px;
+
+                    
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: $darkblue;
+                    margin: 0;
+
+                    font-family: $heading-font;
+                    
+
+                }
+
+                &__description {
+
+                    padding: 0 20px 10px;
+
+                    span {
+                        color: $darkblue;
+                        font-size: 13px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+
+                }
+
+                &__card {
+
+                    display: flex;
+                    padding: 0 20px 20px 10px;
+                    margin-top: -30px;
+
+                    .card{
+
+                        border: none;
+                        padding: 0 10px;
+            
+                        &:after {
+                            content: '';
+                            border-right: 1px solid lightgrey;
+                            height: 50px;
+                            top: 45px;
+                            position: absolute;
+                            right: 0;
+                        }
+            
+                        .card-body {
+                            padding: 0;
+                            p {
+                                &:after {
+                                    content: '';
+                                    width: 15px;
+                                    height: 15px;
+                                    padding: 30px 15px 30px;
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                    position: relative;
+                                    top: 23px;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size:60%;
+                                    // background-image: url('../../assets/images/svg/bed.svg');
+                                }
+                            }
+                        }
+            
+                        .card-footer {
+            
+                            background-color: transparent;
+                            border: none;
+                            padding: 0;
+            
+                        }
+
+                        &:nth-child(1) {
+                            p:after {
+                                background-image: url('../../assets/images/svg/bed.svg');
+                            }
+                        }
+                        &:nth-child(2) {
+                            p:after {
+                                content: "";
+                                background-image: url('../../assets/images/svg/bath.svg') !important;
+                            }
+                        }
+                        &:nth-child(3) {
+                            p:after {
+                                content: "";
+                                background-image: url('../../assets/images/svg/car.svg') !important;
+                            }
+                        }
+                        &:nth-child(4) {
+                            p:after {
+                                content: "";
+                                background-image: url('../../assets/images/svg/square.svg') !important;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+            
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .wp-block-query {
+
+        ul {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            gap: 40px;
+            height: 100%;
+
+            @include media-breakpoint-down(sm) {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+        }
+
+    }
+
+    .testimonials {
+
+        margin-bottom: 100px;
+
+        .container {
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        &::after {
+            content: '';
+            z-index: -1;
+            background-color: #F6F5FC;
+            width: 100%;
+            height: 83%;
+            position: absolute;
+            top: -100px;
+            left: 0;
+        }
+
+        .about_btn {
+
+            margin: 0px auto 40px auto;
+
+            & ~ .wp-block-heading {
+                margin-bottom: 50px;
+            }
+
+        }
+
+    }
+
+}

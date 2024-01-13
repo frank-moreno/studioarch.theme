@@ -1,0 +1,202 @@
+footer {
+
+    // position: relative;
+    // z-index: 999999999;
+
+    padding-top: 0px;
+    margin: 0;
+
+
+    & > div {
+        padding: 0 !important;
+    }
+
+    .footer-cta {
+
+        top: -125px;
+        padding: 30px 60px;
+        border-radius: 2px;
+
+        > .row {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            @include media-breakpoint-down(sm) {
+                .wp-block-button {
+                    width: 100%;
+                    margin-top: 20px;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .wp-block-button {
+
+                a {
+                    &:after {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: transparent;
+                        display: inline-block;
+                        margin-left: 10px;
+                        position: relative;
+                        top: 2px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        background-image: url('../../assets/images/svg/arrow-right.svg');
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .nav-footer {
+
+        @include media-breakpoint-down(sm){
+            padding: 60px 10px;
+        }
+
+        nav {
+                
+                ul {
+    
+                    display: block;
+    
+                    li a {
+    
+                        color: $lightgrey !important;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+    
+                        &:hover {
+                            color: $orange !important;
+                            transition: all 0.2s ease;
+                        }
+    
+                    }
+    
+                }
+        }
+
+    }
+
+    .top-footer {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .wp-block-navigation__responsive-container-content ul {
+
+            display: block;
+
+            li {
+
+                color: $lightgrey !important;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $orange !important;
+                    transition: all 0.2s ease;
+                }
+
+            }
+
+        }
+
+        .contact-footer {
+            color: $white !important;
+            display: block;
+
+            .wp-block-site-title {
+                position: absolute;
+                top: 0;
+                left: 60px;
+            }
+
+            p {
+                padding-top: 20px;
+
+                &.address:before {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-color: $darkblue;
+                    display: inline-block;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 2px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url('../../assets/images/svg/dotmap.svg');
+                }
+            }
+        }
+
+        .subscribe {
+
+            form.wpcf7-form {
+                padding: 0;
+
+                input {
+                    color: $darkblue;
+                    background-color: #fff;
+                    border: none;
+                    border: none;
+                    border-radius: 2px;
+                    width: 100%;
+                    padding: 10px;
+
+                    &.wpcf7-submit {
+                        background-color: $orange !important;
+                        position: absolute;
+                        right: 7px;
+                        top: 25px;
+                        width: 40% !important;
+                        color: $white !important;
+                    }
+                }
+                
+            }
+
+        }
+
+    }
+
+    .bottom-footer {
+        @include media-breakpoint-down(sm){
+            // padding: 20px 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p {
+            margin-bottom: 0;
+            padding: 30px 0;
+
+            @include media-breakpoint-down(sm){
+                text-align: center;
+                // padding: 5px 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+}

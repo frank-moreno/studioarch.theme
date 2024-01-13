@@ -1,0 +1,95 @@
+
+form.wpcf7-form {
+
+    @include media-breakpoint-down(md){
+        padding: 50px 10px 50px 10px;
+    }
+
+    label {
+        
+    }
+
+    .wpcf7-list-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+        &-label {
+            color: $white;
+            font-size: 70%;
+        }
+
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        background-color: #F5F5F7;
+        border: none;
+        color: $darkblue;
+        padding: 15px 20px;
+
+        &:focus,
+        &:active,
+        &:hover {
+            outline: 1px solid $orange;
+        }
+
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .acceptance {
+        
+        p {
+            color: $white;
+            font-size: 80%;
+
+            & > span {
+                width: auto;
+                position: relative;
+                display: block;
+                float: left;
+                margin: -25px 10px 0 -10px;
+            }
+        }
+ 
+    }
+
+    .wpcf7-not-valid-tip,
+    .wpcf7-response-output {
+        color: $orange;
+        font-size: 70%;
+        float: right;
+    }
+
+    .wpcf7-response-output {
+        border-color: $white !important;
+        padding: 10px 20px;
+    }
+
+    .wpcf7-submit {
+        background-color: $grey !important;
+        color: $darkblue !important;
+        padding: 10px 40px !important;
+        font-weight: 300 !important;
+        border-radius: 25px;
+        font-size: 70%;
+    }
+
+    .wpcf7-submit.btn-contact{
+        background-color: $orange !important;
+        color: $white !important;
+        padding: 15px 40px !important;
+        font-weight: 300 !important;
+        border-radius: 5px;
+        // font-size: 70%;
+        border: none;
+    }
+
+}

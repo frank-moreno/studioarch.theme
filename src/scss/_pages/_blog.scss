@@ -1,0 +1,67 @@
+.page-template-blog {
+
+    .intro {
+
+        padding-top: 150px;
+        height: 35vh;
+
+        @include media-breakpoint-down(xxl){
+            height: auto;
+            padding: 150px 30px 0 !important;
+        }
+
+        @include media-breakpoint-down(md){
+            height: auto;
+            padding: 150px 20px 0 !important;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+            margin-top: 0;
+        }
+
+
+    }
+
+    @include media-breakpoint-down(md){
+
+        .wp-block-query-is-layout-flow {
+
+            > div {
+                padding: 0 10px !important;
+            }
+
+        }
+
+        .wp-block-post-title {
+            font-size: 40px !important;
+        }
+    }
+
+}
+
+.single-post {
+
+    @include media-breakpoint-down(md) {
+        .wp-block-post-title {
+            font-size: 40px !important;
+        }
+    }
+
+    .single-post-block-image .col{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .wp-block-post-featured-image {
+        img {
+            max-height: 350px !important;
+            object-fit: cover !important;
+            object-position: center !important;
+        }
+    }
+
+}

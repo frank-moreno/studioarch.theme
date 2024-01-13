@@ -1,0 +1,127 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600&family=Red+Hat+Display:ital,wght@0,300;0,600;1,300&display=swap');// Font - Families
+
+// @import url('https://fonts.cdnfonts.com/css/lt-galaxy-reverse');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap');
+// @import url("https://use.typekit.net/dij2ray.css");
+
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Nunito', sans-serif;
+
+
+
+// Brand colours
+$white: #FFFFFF;
+$black: #000000;
+$darkblue: #0A2C3D;
+$lightgrey: #F2F6F7;
+$orange: #FF5A3C;
+$darkred: #8C3130;
+$red: #9A2A1B;
+$grey: #CCCCCC;
+
+$colours: (
+	"white": $white,
+	"black": $black,
+	"darkblue": $darkblue,
+	"orange": $orange,
+	"lightgrey": $lightgrey,
+	"darkred": $darkred,
+	"red": $red,
+	"grey": $grey,	
+);
+
+body {
+
+	.has-text-color.has {
+		
+		&-white-color {
+			color: $white !important;
+		}
+
+		&-black-color {
+			color: $black !important;
+		}
+
+		&-darkblue-color {
+			color: $darkblue !important;
+		}
+
+		&-orange-color {
+			color: $orange !important;
+		}
+
+		&-lightgrey-color {
+			color: $lightgrey !important;
+		}
+
+		&-darkred-color {
+			color: $darkred !important;
+		}
+
+		&-red-color {
+			color: $red !important;
+		}
+
+		&-grey-color {
+			color: $grey !important;
+		}
+	}
+}
+
+// Font weight
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+
+// Font - Sizes
+$font-sizes: (
+	'body': 16px,
+	'body2': 14px,
+	'btn': 16px,
+	't21': 21px,
+	'h1': 56px,
+	'h1Tab': 56px,
+	'h1Mob': 46px,
+	'h2': 42px,
+	'h2Tab': 38px,
+	'h2Mob': 28px,
+	'h3': 28px,
+	'h3Tab': 28px,
+	'h3Mob': 22px,
+	'h4': 22px,
+	'h4Mob': 18px,
+	'h5': 22px,
+	'h5Mob': 18px,
+	'h6': 19px
+);
+
+$body: map-get($font-sizes, body);
+$body2: map-get($font-sizes, body2);
+$btn: map-get($font-sizes, btn1);
+$t21: map-get($font-sizes, t21);
+$h1: map-get($font-sizes, h1);
+$h1Tab: map-get($font-sizes, h1Tab);
+$h1Mob: map-get($font-sizes, h1Mob);
+$h2: map-get($font-sizes, h2);
+$h2Tab: map-get($font-sizes, h2Tab);
+$h2Mob: map-get($font-sizes, h2Mob);
+$h3: map-get($font-sizes, h3);
+$h3Tab: map-get($font-sizes, h3Tab);
+$h3Mob: map-get($font-sizes, h3Mob);
+$h4: map-get($font-sizes, h4);
+$h4Mob: map-get($font-sizes, h4Mob);
+$h5: map-get($font-sizes, h5);
+$h5Mob: map-get($font-sizes, h5Mob);
+$h6: map-get($font-sizes, h6);
+
+// Line height
+$line-h-body: 25px;
+
+$container-margin: calc( -15px - ( ( 100vw - 1400px ) / 2 ) );
+$container-margin-left: calc( 15px + ( ( 100vw - 1400px ) / 2 ) );
