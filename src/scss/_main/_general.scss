@@ -8,12 +8,6 @@ main {
 
 }
 
-// body {
-
-//     background-color: $lightgrey;
-    
-// }
-
 .container-fluid {
 
     max-width: none !important;
@@ -50,8 +44,21 @@ img {
 
 .swiper-pagination {
     &-bullet {
-        background-color: $orange;
+        background-color: transparent;
         opacity: 1;
+        font-size: 250%;
+        padding-right: 25px;
+        &::after {
+            content: "-";
+            color: $white;
+        }
+
+        &-active {
+            &::after {
+                content: "-";
+                color: $green;
+            }
+        }
     }
 }
 
@@ -59,35 +66,8 @@ img {
 
     &-prev,
     &-next {
-        width: 100px;
-        height: 70px;
         &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            position: absolute;
-        }
-    }
-
-    &-prev {
-        &::after {
-            content: '';
-            background-image: url(../../assets/images/svg/arrow-right-orange.svg);
-            transform: rotate(180deg);
-            left: -45px;
-        }
-    }
-
-    &-next {
-        &::after {
-            content: '';
-            background-image: url(../../assets/images/svg/arrow-right-orange.svg);
-            transform: rotate(0deg);
-            right: -45px;
+            color: white;
         }
     }
 
@@ -101,96 +81,20 @@ img {
         li {
             display: block;
             margin-right: 10px;
-            background-color: rgba($orange, 0.1);
+            background-color: rgba($green, 0.1);
             padding: 5px 10px;
             margin-bottom: 10px;
             border-radius: 5px;
-            color: $orange;
+            color: $green;
             a {
-                color: $orange;
+                color: $green;
                 font-size: 16px;
                 font-weight: 400;
                 text-decoration: none;
                 &:hover {
-                    color: $orange;
+                    color: $green;
                 }
             }
         }
     }
-}
-
-form.searchandfilter {
-
-    width: 100%;
-    padding: 10px 30px;
-    margin-top: 20px;
-    z-index: 2;
-    box-shadow: 0 0 15px $grey;
-
-    ul {
-
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding-left: 0 !important;
-
-        li ul {
-            margin-bottom: 10px;
-        }
-
-        li {
-
-            width: 100%;
-
-            &.cat-item-7 {
-                padding-bottom: 30px;
-                border-bottom: 2px solid $orange;
-            }
-
-            input {
-                border: none;
-                border: 1px solid lightgrey;
-                padding: 0 10px;
-                font-size: 16px;
-                font-weight: 400;
-                color: $darkblue;
-                margin: 30px 0 10px;
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            input[type="submit"] {
-                background-color: $orange;
-                border: none;
-                color: $white;
-                font-size: 16px;
-                font-weight: 400;
-                padding: 10px 20px;
-                border-radius: 2px;
-                cursor: pointer;
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            select {
-                width: 100%;
-                height: 50px;
-                border: none;
-                border: 1px solid lightgrey;
-                padding: 0 10px;
-                font-size: 16px;
-                font-weight: 400;
-                color: $darkblue;
-                margin: 30px 0 10px;
-                &:focus {
-                    outline: none;
-                }
-            }
-
-        }
-
-    }
-
-}    
+}   

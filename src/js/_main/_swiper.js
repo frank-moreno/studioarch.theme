@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-home-top', {
     observeSlideChildren: true,
     slideToClickedSlide: true,
     updateOnWindowResize: true,
-    slidesPerView: .99,
+    slidesPerView: .98,
     spaceBetween: 0,
     loop: true,
     speed: 5000,
@@ -19,18 +19,22 @@ const swiper = new Swiper('.swiper-home-top', {
     //         slidesPerView: 1
     //     }
     // },
-    autoplay: {
-       delay: 8000,
-       disableOnInteraction: false,
-    },
+    // autoplay: {
+    //    delay: 8000,
+    //    disableOnInteraction: false,
+    // },
     keyboard: {
         enabled: true,
         onlyInViewport: false,
     },
-    // navigation: {
-    //     nextEl: '.swiper-button-prev',
-    //     prevEl: '.swiper-button-next',
-    // },
+    navigation: {
+        nextEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-next',
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     grabCursor: true
   });
 

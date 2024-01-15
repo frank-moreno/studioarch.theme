@@ -64,15 +64,6 @@ $(document).ready(function () {
 
         $('#menuToggle input').on('click', function () {
             $('nav .wp-block-navigation__responsive-container').toggleClass('unactive active');
-
-            // $('html body').css('overflow', 'hidden');
-            // if ($('nav .wp-block-navigation__responsive-container').hasClass('active')) {
-            //     $('html body').css('overflow', 'hidden');
-            // }else if ($('nav .wp-block-navigation__responsive-container').hasClass('unactive')){
-            //     $('html body').css('overflow', 'auto');
-            // }else {
-            //     $('html body').css('overflow', 'hidden');
-            // }
         });
 
     }

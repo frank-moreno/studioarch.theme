@@ -11,16 +11,20 @@ header {
         padding-top: 25px;
     }
 
+    .header-phonenumber a {
+        color: $lightgrey;
+    }
+
     .wp-block-navigation-item {
         color: $darkblue;
         font-weight: 600;
 
         &.current-menu-item {
-            color: $orange;
+            color: $green;
         }
 
         &:hover {
-            color: $orange !important;
+            color: $green !important;
             transition: all 0.2s ease;
         }
     }
@@ -57,11 +61,11 @@ header {
             color: $white;
 
             &.current-menu-item {
-                color: $orange;
+                color: $green;
             }
 
             &:hover {
-                color: $orange !important;
+                color: $green !important;
                 transition: all 0.2s ease;
             }
         }

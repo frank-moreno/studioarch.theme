@@ -274,7 +274,7 @@
             margin-bottom: 20px;
 
             a {
-                color: $orange;
+                color: $green;
                 font-weight: 400;
             }
         }
@@ -348,7 +348,7 @@
         &__price p{
             font-size: 18px;
             font-weight: 400;
-            color: $orange;
+            color: $green;
             margin-bottom: 10px;
         }
 
@@ -358,7 +358,7 @@
 
             &__status {
 
-                background-color: $orange;
+                background-color: $green;
                 padding: 5px 10px;
 
                 position: absolute;
@@ -415,7 +415,7 @@
                 padding: 20px 20px 10px;
 
                 .price {
-                    color: $orange;
+                    color: $green;
                     font-size: 18px;
                     font-weight: 700;
                 }
@@ -765,7 +765,7 @@
 
             &:hover {
 
-                border-bottom: 2px solid $orange;
+                border-bottom: 2px solid $green;
                 transition: all 0.2s ease;
 
             }
@@ -799,7 +799,7 @@
         &-intro {
 
             .about_btn {
-                background-color: rgba($orange,.1);
+                background-color: rgba($green,.1);
                 padding: 5px 20px;
                 border-radius: 25px;
                 width: fit-content;
@@ -865,8 +865,8 @@
                 }
         
                 & + blockquote {
-                    background-color: rgba($orange,.1);
-                    border-left: 5px $orange solid;
+                    background-color: rgba($green,.1);
+                    border-left: 5px $green solid;
                     padding: 20px 30px;
                     margin: 50px 0;
                     p {
@@ -1016,7 +1016,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-color: $orange;
+            background-color: $green;
 
             a {
                 margin: 0 10px;
@@ -1026,7 +1026,7 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 100%;
-                background-color: $orange;
+                background-color: $green;
                 color: $white;
                 transition: all 0.2s ease;
 
@@ -1115,7 +1115,7 @@
             }
 
             &:hover{
-                background-color: rgba($orange, 0.1);
+                background-color: rgba($green, 0.1);
                 cursor: pointer;
                 transition: all 0.2s ease;
             }

@@ -35,7 +35,7 @@ form.wpcf7-form {
         &:focus,
         &:active,
         &:hover {
-            outline: 1px solid $orange;
+            outline: 1px solid $green;
         }
 
     }
@@ -63,7 +63,7 @@ form.wpcf7-form {
 
     .wpcf7-not-valid-tip,
     .wpcf7-response-output {
-        color: $orange;
+        color: $green;
         font-size: 70%;
         float: right;
     }
@@ -83,7 +83,7 @@ form.wpcf7-form {
     }
 
     .wpcf7-submit.btn-contact{
-        background-color: $orange !important;
+        background-color: $green !important;
         color: $white !important;
         padding: 15px 40px !important;
         font-weight: 300 !important;

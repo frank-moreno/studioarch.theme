@@ -4,7 +4,7 @@
         "settings": {
             "appearanceTools": true,
             "layout": {
-                "contentSize": "1280px",
+                "contentSize": "992px",
                 "wideSize": "100vw"
             },
             "spacing": {
@@ -139,6 +139,11 @@
                         "slug": "light-grey",
                         "color": "#f2f6f7",
                         "name": "Light Grey"
+                    },
+                    {
+                        "slug": "green",
+                        "color": "#D3ED34",
+                        "name": "Green"
                     },
                     {
                         "slug": "white",
