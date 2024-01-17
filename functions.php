@@ -26,17 +26,7 @@ function theme_assets() {
 add_action( 'wp_enqueue_scripts', 'theme_assets' );
 
 
-include( get_template_directory() . '/templates/shortcodes/card_properties.php' );
-
-include( get_template_directory() . '/templates/shortcodes/card_listed_properties.php' );
-
-include( get_template_directory() . '/templates/shortcodes/card_testimonials.php' );
-
-include( get_template_directory() . '/templates/shortcodes/latest_properties.php' );
-
-include( get_template_directory() . '/templates/shortcodes/card_agents.php' );
-
-include( get_template_directory() . '/templates/shortcodes/single_properties.php' );
+include( get_template_directory() . '/templates/shortcodes/work_projects.php' );
 
 
 

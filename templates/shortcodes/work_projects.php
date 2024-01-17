@@ -31,8 +31,6 @@ function work_projects_shortcode() {
         while ( $query->have_posts() ) {
             $query->the_post();
 
-            if (get_the_terms( get_the_ID(), 'language' )[0]-> slug == 'en') {
-
                 $output .= '<div class="swiper-slide">
                             <div class="project-item u-faux-box-link">
                                 <div class="project-item__image">
@@ -40,9 +38,7 @@ function work_projects_shortcode() {
                                 </div>
                                 <div class="project-item__content">
                                     <h3 class="project-item__title">' . get_the_title() . '</h3>
-                                    <div class="project-item__description">
-                                        <p>' . get_the_excerpt() . '</p>  
-                                    </div>
+                                    
                                     <div class="project-item__span">
                                         <span>View Project</span>
                                     </div>
@@ -52,8 +48,6 @@ function work_projects_shortcode() {
                                 </div>
                             </div>
                         </div>';
-
-            }
         
         }
 

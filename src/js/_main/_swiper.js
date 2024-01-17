@@ -39,28 +39,26 @@ const swiper = new Swiper('.swiper-home-top', {
   });
 
 
-  const howtigoes = new Swiper('.swiper-properties', {
-    observeSlideChildren: true,
-    slideToClickedSlide: true,
-    updateOnWindowResize: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
+  const howtigoes = new Swiper('.swiper-projects', {
+    // observeSlideChildren: true,
+    // slideToClickedSlide: true,
+    // updateOnWindowResize: true,
+    slidesPerView: 1.2,
+    centeredSlides: true,
+    spaceBetween: 40,
     // loop: true,
+    initialSlide: 0,
     speed: 3000,
     breakpoints: {
         320: {
             slidesPerView: 1
         },
         760: {
-            slidesPerView: 1.5
+            slidesPerView: 1.2
         },
         992: {
-            slidesPerView: 3.5
+            slidesPerView: 1.75
         }
-    },
-    autoplay: {
-       delay: 2000,
-       disableOnInteraction: false,
     },
     keyboard: {
         enabled: true,
@@ -71,43 +69,5 @@ const swiper = new Swiper('.swiper-home-top', {
         dynamicBullets: true,
         clickable: true,
     },
-    grabCursor: true
-  });
-
-  const testimonials = new Swiper('.swiper-testimonials', {
-    observeSlideChildren: true,
-    slideToClickedSlide: true,
-    updateOnWindowResize: true,
-    slidesPerView: 1,
-    spaceBetween: 40,
-    // loop: true,
-    speed: 3000,
-    breakpoints: {
-        320: {
-            slidesPerView: 1
-        },
-        760: {
-            slidesPerView: 1.5
-        },
-        992: {
-            slidesPerView: 3
-        }
-    },
-    // autoplay: {
-    //    delay: 2000,
-    //    disableOnInteraction: false,
-    // },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     dynamicBullets: true,
-    //   },
     grabCursor: true
   });

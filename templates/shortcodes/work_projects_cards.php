@@ -14,13 +14,6 @@ function work_projects_cards_shortcode() {
     $args = array(
         'post_type'              => array( 'project' ),
         'post_status'            => array( 'publish' ),
-        // 'tax_query'              => array(
-        //     array(
-        //         'taxonomy'         => 'languages',
-        //         'field'            => 'term_id',
-        //         'terms'            => 'languages',
-        //     ),
-        // ),
         'posts_per_page'         => '-1',
         'order'                  => 'ASC',
         'orderby'                => 'menu_order',
@@ -43,12 +36,6 @@ function work_projects_cards_shortcode() {
         while ( $query->have_posts() ) {
             $query->the_post();
 
-            if (get_the_terms( get_the_ID(), 'language' )[0]-> slug == 'en') {
-
-            // print_r(get_the_terms( get_the_ID(), 'language' )[0]);
-            // echo get_the_terms( get_the_ID(), 'language' )[0]-> slug; // outputs 'en'
-            // die();
-
             $output .= '<div class="card">
                             <div class="card-body u-faux-box-link">
                                 <div class="project-item__image">
@@ -68,8 +55,6 @@ function work_projects_cards_shortcode() {
                                 </div>
                             </div>
                         </div>';
-
-            }
 
         }
 

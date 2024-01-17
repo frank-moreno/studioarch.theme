@@ -1,5 +1,15 @@
 .home{
 
+    .wp-block-heading {
+        font-size: 30px;
+        font-weight: 700;
+        // color: $lightgrey;
+
+        span {
+            color: $green;
+        }
+    }
+
     .wp-block-site-title,
     .wp-block-navigation-item  {
         color: $lightgrey
@@ -59,6 +69,150 @@
 
             @include media-breakpoint-down(sm) {
                 grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+        }
+
+    }
+
+    .swiper-projects {
+
+        overflow: hidden;
+
+        .project-item {
+
+            &__image {
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+
+                    height: 650px;
+                }
+
+            }
+
+            &__title {
+                    
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: $darkblue;
+                    margin-top: 40px;
+                    margin-bottom: 0;
+    
+                    font-family: $heading-font;
+    
+                
+            }
+
+        }
+
+    }
+
+    .testimonials {
+
+        height: 450px;
+
+        .areoi-background__image {
+            background-size: cover !important;
+            background-attachment: fixed !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+    
+    }
+
+    .grid_logos {
+
+        .row {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 25px;
+            gap: 40px;
+            height: 100%;
+
+            @include media-breakpoint-down(md) {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .col {
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                
+                figure {
+                    max-width: 50%;
+                }
+            }
+
+        }
+
+    }
+
+    .postloop {
+
+        ul li > div {
+            padding: 0 !important;
+            height: 300px;
+
+            &:hover {
+                .wp-block-post-date,
+                .wp-block-post-title {
+                    opacity: 1;
+                }
+                .wp-block-post-featured-image {
+                    img {
+                        opacity: 0;
+                    }
+                }
+
+                border: solid 3px $green;
+                
+            }
+        }
+
+        .wp-block-post {
+
+            &-featured-image {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 300px;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    ~ .wp-block-post-date,
+                    ~ .wp-block-post-title {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-title,
+            &-date {
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+                opacity: 0;
+            }
+
+            &-title {
+                padding: 0 0 0 20px;
+                font-size: 32px;
+            }
+
+            &-date {
+                margin-top: -300px;
+                color: $darkblue;
+                padding: 10px 0 0 20px;
+            }
+
+            &-title,
+            &-date,
+            &-featured-image {
+                transition: all .4s ease-in-out;
             }
 
         }
