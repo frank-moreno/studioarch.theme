@@ -1,44 +1,19 @@
 .page-template-blog {
 
-    .intro {
+    .wp-block-heading {
+        font-weight: 700 !important;
+        color: $darkblue !important;
+        margin-bottom: 100px !important;
+        font-family: $heading-font !important;
 
-        padding-top: 150px;
-        height: 35vh;
-
-        @include media-breakpoint-down(xxl){
-            height: auto;
-            padding: 150px 30px 0 !important;
+        span {
+            color: $green !important;
         }
-
-        @include media-breakpoint-down(md){
-            height: auto;
-            padding: 150px 20px 0 !important;
-        }
-
-        h1 {
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 0.5em;
-            margin-top: 0;
-        }
-
-
+    
     }
 
-    @include media-breakpoint-down(md){
-
-        .wp-block-query-is-layout-flow {
-
-            > div {
-                padding: 0 10px !important;
-            }
-
-        }
-
-        .wp-block-post-title {
-            font-size: 40px !important;
-        }
+    .post {
+        margin-bottom: 100px;
     }
 
 }
