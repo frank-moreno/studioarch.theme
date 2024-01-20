@@ -136,7 +136,7 @@ header {
         font-weight: 700;
         position: absolute;
         left: 50px;
-        top: 5px;
+        top: -5px;
 
         @include media-breakpoint-down(lg) {
             
