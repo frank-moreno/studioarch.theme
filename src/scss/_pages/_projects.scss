@@ -1,0 +1,108 @@
+.page-template-projects {
+
+    .wp-block-heading {
+        font-weight: 700 !important;
+        color: $darkblue !important;
+        margin-bottom: 100px !important;
+        font-family: $heading-font !important;
+
+        span {
+            color: $green !important;
+        }
+    
+    }
+
+    .post {
+        margin-bottom: 100px;
+    }
+
+    .wp-block-query {
+
+        ul {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 25px;
+            gap: 40px;
+            height: 100%;
+
+            @include media-breakpoint-down(sm) {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+            li {
+
+                > div {
+                    padding: 0 !important;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+
+                        height: 225px;
+                    }
+
+                    .wp-block-post-date {
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: 0px;
+                        margin-bottom: 0;
+                        opacity: 0.5;
+
+                        font-family: $body-font;
+
+                    }
+
+                    .wp-block-post-title {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $darkblue;
+                        margin-top: 0px;
+                        margin-bottom: 0;
+
+                        font-family: $heading-font;
+                    }
+                }
+
+            }
+
+        }
+
+    
+
+    }
+
+}
+
+.single-project {
+
+    .wp-block-post-title {
+        text-align: center;
+        color: #d3ed34 !important;
+        font-size: 72px !important;
+    }
+
+    .wp-block-post-date {
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(md) {
+        .wp-block-post-title {
+            font-size: 40px !important;
+        }
+    }
+
+    .single-post-block-image .col{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .wp-block-post-featured-image {
+        img {
+            max-height: 350px !important;
+            object-fit: cover !important;
+            object-position: center !important;
+        }
+    }
+
+}

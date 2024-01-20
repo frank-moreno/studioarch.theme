@@ -221,6 +221,11 @@
                     "postTypes": [ "post","page" ]
                 },
                 {
+                    "name": "projects",
+                    "title": "Projects",
+                    "postTypes": [ "post","page" ]
+                },
+                {
                     "name": "work",
                     "title": "Work",
                     "postTypes": [ "post","page" ]
