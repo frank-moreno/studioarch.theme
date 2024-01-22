@@ -1,5 +1,9 @@
 .home{
 
+    header .header-phonenumber a {
+        color: $lightgrey !important;
+    }
+
     .wp-block-heading {
         font-size: 30px;
         font-weight: 700;

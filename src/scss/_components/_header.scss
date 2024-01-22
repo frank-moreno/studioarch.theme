@@ -11,8 +11,8 @@ header {
         padding-top: 25px;
     }
 
-    .header-phonenumber a {
-        color: $lightgrey;
+    .header-phonenumber:not(.home) a {
+        color: $darkblue;
     }
 
     .wp-block-navigation-item {

@@ -48,6 +48,10 @@ footer {
         }
     } 
 
+    nav ul {
+        gap: 10px !important
+    }
+
     .nav-footer {
 
         @include media-breakpoint-down(sm){
