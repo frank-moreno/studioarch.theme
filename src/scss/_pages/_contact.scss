@@ -12,4 +12,16 @@
 
     }
 
+    @include media-breakpoint-down(xl) {
+        h1,
+        .wp-block-spacer ~ .container{
+            padding-left: 20px;
+            padding-right: 20px;
+
+            h2.wp-block-heading {
+                margin-top: 50px !important;
+            }
+        }
+    }
+
 }

@@ -29,6 +29,12 @@ header {
         }
     }
 
+    .header-phonenumber a {
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
+    }
+
     &.scrolled {
         background-color: $darkblue;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -51,6 +57,9 @@ header {
 
         .header-phonenumber a {
             color: $lightgrey;
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
         }
 
         .top-header {
@@ -143,7 +152,8 @@ header {
         top: -5px;
 
         @include media-breakpoint-down(lg) {
-            
+            left: 20px;
+            top: 5px;
         }
 
     }

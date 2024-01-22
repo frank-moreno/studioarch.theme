@@ -2,6 +2,9 @@
 
     header .header-phonenumber a {
         color: $lightgrey !important;
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
     }
 
     .wp-block-heading {
@@ -17,6 +20,12 @@
     .wp-block-site-title,
     .wp-block-navigation-item  {
         color: $lightgrey
+    }
+
+    @include media-breakpoint-down(xl)  {
+        .wp-block-navigation-item {
+            color: $darkblue;
+        }
     }
 
     .swiper-home-top {
@@ -57,8 +66,14 @@
             }
         
         }
+        
+    }
 
-                    
+    @include media-breakpoint-down(lg) {
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 95%
+        }
     }
 
     .wp-block-query {

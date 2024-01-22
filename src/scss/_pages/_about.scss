@@ -61,14 +61,24 @@
 
         }
 
+        @include media-breakpoint-down(lg) {
+            .row > .col {
+                padding-bottom: 50px;
+            }
+        }
+
     }
 
     h2 {
         font-size: 34px;
         font-weight: 700;
         color: $darkblue;
-        margin-top: 100px;
+        // margin-top: 100px;
         font-family: $heading-font;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 100px;
+        }
 
         span {
             color: $green;
@@ -86,6 +96,10 @@
             grid-column-gap: 25px;
             gap: 40px;
             height: 100%;
+
+            @include media-breakpoint-down(lg) {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
 
             .wp-block-heading {
                 font-size: 16px;

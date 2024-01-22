@@ -9,7 +9,10 @@ footer {
 
 
     & > div {
-        padding: 0 !important;
+        // padding: 0 !important;
+        @include media-breakpoint-up(xl) {
+            padding: 0 !important;
+        }
     }
 
     .wp-block-site-title {
@@ -85,6 +88,35 @@ footer {
 
     #menuToggle {
         display: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+
+        padding-left: 20px;
+
+        h2 {
+            padding-bottom: 40px;
+        }
+
+        p,
+        ul {
+            text-align: left !important;
+        }
+
+        nav {
+            float: left;
+            ul li {
+                margin-left: 0 !important;
+                margin-right: auto !important;
+            }
+
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        ul li {
+            margin-left: 0 !important;
+            margin-right: auto !important;
+        }
     }
 
 }

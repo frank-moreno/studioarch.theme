@@ -39,10 +39,23 @@
 
         .block-img-right .wp-block-image img {
             float: right;
+            @include media-breakpoint-down(lg) {
+                width: 100% !important;
+                margin-top: 100px;
+            }
         }
 
-        .block-img-left .wp-block-image img {
-            float: left;
+        .block-img-left {
+            @include media-breakpoint-down(lg) {
+                order: 1 !important;
+            }
+            .wp-block-image img {
+                float: left;
+                @include media-breakpoint-down(lg) {
+                    width: 100% !important;
+                    margin-top: 100px;
+                }
+            }
         }
 
     }
